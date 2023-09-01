@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <header>
+        <img src="../static/jij.png" alt="">
+        <link rel="stylesheet" href="../static/result.css">
+        <div class="logo">Autism Prediction</div>
+        <ul class="navlist">
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+            <li><a href="{{ url_for('test') }}">Test</a></li>
+            <li><a href="{{ url_for('result') }}">Result</a></li>
+        </ul>
+        <div id="menu-icon" class="bx bx-menu"></div>
+    </header>
+</head>
+<body>  
+
+    <div class="report">
+        <h1>{{ l["pl"] }}</h1>
+        
+        <div class="section">
+            <div class="section-title">Personal Information</div>
+            <div class="subsection">Name : {{ l["name"] }}</div>
+            <div class="subsection">Age : {{ l["age"] }} </div>
+            <div class="subsection">Gender : {{ l["gender"] }} </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Gene based Information</div>
+            <div class="subsection">Ethnicity : {{ l["ethnicity"] }}</div>
+            <div class="subsection">Suffered from Jaundice : {{ l["jaundice"] }}</div>
+            <div class="subsection">Autism in family : {{ l["autism"] }}</div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Assesment Scores</div>
+            <div class="subsection">A1  score  : {{ l["a1"] }}</div>
+            <div class="subsection">A2  score  : {{ l["a2"] }}</div>
+            <div class="subsection">A3  score  : {{ l["a3"] }}</div>
+            <div class="subsection">A4  score  : {{ l["a4"] }}</div>
+            <div class="subsection">A5  score  : {{ l["a5"] }}</div>
+            <div class="subsection">A6  score  : {{ l["a6"] }}</div>
+            <div class="subsection">A7  score  : {{ l["a7"] }}</div>
+            <div class="subsection">A8  score  : {{ l["a8"] }}</div>
+            <div class="subsection">A9  score  : {{ l["a9"] }}</div>
+            <div class="subsection">A10 score : {{ l["a10"] }}</div>
+        </div>
+
+        
+        <div class="section">
+            <div class="section-title">Result</div>
+            <div class="subsection">Autism : {{ l["fr"] }}</div>
+            <div class="subsection">Overall Score : {{ l["asm"] }}</div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <title>Autism Prediction</title>
+</head>
+<body>
+    <header>
+        <img src="../static/jij.png" alt="">
+        <div class="logo">Autism Prediction</div>
+        <ul class="navlist">
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+            <li><a href="{{ url_for('test') }}">Test</a></li>
+            <li><a href="{{ url_for('result') }}">Result</a></li>
+        </ul>
+        <div id="menu-icon" class="bx bx-menu"></div>
+    </header>
+    <main>
+        <div class="content1">
+            <br>
+            <h3>What is Autism ?</h3>
+            <p>Autism spectrum disorder (ASD) is a developmental disability caused by differences in the brain. 
+                People with ASD often have problems with social communication and interaction, and restricted or
+                 repetitive behaviors or interests. People with ASD may also have different ways of
+                  learning, moving, or paying attention.</p>
+        </div>
+        <img id="picsq1" src="../static/6962257.jpg" alt="">
+        <div class="content1">
+
+            <h3>Who can take this test ?</h3>
+            <p>This brief, time-saving test is designed for anyone who thinks they might benefit from an autism screening or evaluation.
+                The items below will help you determine whether you may need an in-depth evaluation including screening tools, parental or family insight, and clinical observations.
+                A mental health professional can also help figure out if your symptoms might be a sign of another mental health condition and recommend treatment if needed.</p>
+        </div>
+        <img id="picsq" src="../static/episod1_dr_animo.jpg" alt="">
+        <div class="content1">
+            <h3>About the Test</h3>
+            <p>This free autism quiz was adapted from the Autism Spectrum Screening Questionnaire (ASSQ) 
+                designed to screen for the possibility of autism spectrum disorder (ASD).
+                This is a diagnostic tool and should be considered for personal use only. An accurate diagnosis
+                can be made only through a clinical evaluation. If you think you might have ASD, consider speaking 
+                with a primary care doctor, psychiatrist or another mental health professional and it will measure if 
+                you have any autism-related traits, based on your own self-assessment.. They can perform a 
+                clinical evaluation that includes screening tools, parental or family insight, and clinical observations 
+                to arrive at the most accurate diagnosis.</p>
+                <br>
+                <p></p>
+                <br>
+                <div class="button1">
+                    <a class="button button1" target="_blank" href="{{ url_for('test') }}">Take Test</a>
+                </div>
+                <br>
+        </div>
+        <div class="content1">
+            <p>The 10 questions in this test may be useful to understand if you are experiencing some of the common behaviours and thoughts associated with being on the Autistic Spectrum. The questions are based on an evidence-based screening tool – the Autism Spectrum Quotient – but are indicative only and do not form a formal diagnosis. this quiz is not a diagnosis for autism, the test can give you an indication of whether you have traits of autism.If you screened positive for a disorder, please do not panic. Remember that this is just a test you are taking on the internet and not an expert diagnosis. Please reach out to a health care provider for help if you are distressed.</p>
+        </div>
+        
+        </div>
+        {{ age }}
+        {{ asm }}
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

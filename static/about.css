@@ -20,6 +20,7 @@ header img{
     width: 1.3cm;
     display: flex;
     margin-left: 3.5rem;
+    max-width: 100%;
 }
 .logo{
     
@@ -75,10 +76,10 @@ ul{
 /* Original CSS styles here */
 
 /* Media query for screens up to 768px */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     header {
-        display: block;
-        text-align: center;
+        flex-direction: column;
+        align-items: flex-start;
     }
     
     header img {

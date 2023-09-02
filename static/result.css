@@ -94,8 +94,32 @@ h1 {
 
 /* Styling for printing */
 @media print {
-    body {
-        font-size: 12pt;
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    header img {
+        margin: 1rem auto;
+    }
+
+    .logo {
+        margin: 0.5rem auto;
+    }
+
+    .navlist {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .navlist ul {
+        margin-left: 0;
+        font-size: 18px;
+    }
+
+    .navlist a {
+        display: block;
+        padding: 5px 0;
     }
     .report {
         margin:0;
@@ -119,5 +143,34 @@ h1 {
     }
     .subsection {
         margin-top: 5px;
+    }
+}
+@media screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    header img {
+        margin: 1rem auto;
+    }
+
+    .logo {
+        margin: 0.5rem auto;
+    }
+
+    .navlist {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .navlist ul {
+        margin-left: 0;
+        font-size: 18px;
+    }
+
+    .navlist a {
+        display: block;
+        padding: 5px 0;
     }
 }
